@@ -11,7 +11,7 @@ import (
 )
 
 type Cli struct {
-	File string `arg:"" optional:"" type:"existingfile" help:"The doppel output file. \"-\" means stdin."`
+	File string `arg:"" type:"existingfile" help:"The doppel output file. \"-\" means stdin."`
 }
 
 func main() {
