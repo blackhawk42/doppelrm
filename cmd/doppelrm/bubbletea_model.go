@@ -80,12 +80,12 @@ func defaultKeyMap() *keyMap {
 }
 
 func (k keyMap) ShortHelp() []key.Binding {
-	return []key.Binding{k.toggle, k.quit, k.enter}
+	return []key.Binding{k.toggle, k.quit, k.enter, k.help}
 }
 
 func (k keyMap) FullHelp() [][]key.Binding {
 	return [][]key.Binding{
-		{k.toggle, k.quit, k.enter},
+		{k.toggle, k.quit, k.enter, k.help},
 		{k.up, k.down, k.left, k.right},
 	}
 }
