@@ -54,11 +54,11 @@ func defaultKeyMap() *keyMap {
 		),
 		left: key.NewBinding(
 			key.WithKeys("left", "h"),
-			key.WithHelp("←/h", "previous set"),
+			key.WithHelp("←/h", "previous hash"),
 		),
 		right: key.NewBinding(
 			key.WithKeys("right", "l"),
-			key.WithHelp("→/l", "next set"),
+			key.WithHelp("→/l", "next hash"),
 		),
 		toggle: key.NewBinding(
 			key.WithKeys(" "),
