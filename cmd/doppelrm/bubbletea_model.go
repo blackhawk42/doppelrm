@@ -301,7 +301,7 @@ func (m bblModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.help.Width = msg.Width
 		m.progress.Width = msg.Width
 		// Styles
-		m.normalStyle = m.widthStyle.Width(msg.Width)
+		m.widthStyle = m.widthStyle.Width(msg.Width)
 	case tea.KeyMsg:
 		switch {
 		case key.Matches(msg, m.keymap.down):
